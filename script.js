@@ -1,8 +1,7 @@
-
-const student={name:"h",
-	getKeys() {
+const obj={getKeys() {
 		const arr=Object.keys(student)
-	return 	console.log(arr)
- }  }
- 
-student.getKeys()
+	return console.log(arr)
+ }}
+const student={name:"h"  }
+ Object.setPrototypeOf(student,obj);
+const keys=student.getKeys()
